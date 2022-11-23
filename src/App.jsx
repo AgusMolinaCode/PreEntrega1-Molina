@@ -6,10 +6,8 @@ function App() {
   
   return(
     <>
-      <h1>Hola</h1>
-
-      <ItemListContainer />
       <Navbar />
+      <ItemListContainer greeting='Hola Coder'/>
     </>   
   )
 }
