@@ -1,17 +1,14 @@
 import React from 'react'
-import ItemCount from './itemCount'
-import ItemDetailContainer from './ItemDetailContainer'
 import ItemList from './ItemList'
 
-const ItemListContainer = ({greeting}) => {
+const ItemListContainer = () => {
   return (
-    <>
-      <h1  className='text-center text-3xl text-slate-900 font-bold'>{greeting}</h1>
-      <ItemCount />
-      <ItemList />
-      <ItemDetailContainer />
+    <div>
+    
+      <h1 className='text-4xl text-red-600 text-center'>PRODUCTOS</h1>
+      <ItemList  />
 
-    </>
+    </div>
   )
 }
 

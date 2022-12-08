@@ -1,19 +1,41 @@
-import React from 'react'
+import React, {useEffect, useState} from 'react'
+import ItemDetailContainer from './ItemDetailContainer'
+import { PRODUCTOS } from '../data/PRODUCTOS'
 
-const ItemDetail = ({ price,description,title,pictureUrl }) => {
-  return (
-    <div className="card card-compact w-96 bg-base-100 shadow-xl">
-        <figure><img src={pictureUrl} alt="repuestos" /></figure>
-        <div className="card-body">
-            <h2 className="card-title">{title}</h2>
-            <p>{description}</p>
-            <p>{price}</p>
-            <div className="card-actions justify-end">
-                <button className="btn btn-primary">Buy Now</button>
-            </div>
-        </div>
-    </div>
-  )
+const ItemDetail = () => {
+
+    const [item, setItem] = useState( [] )
+  
+    useEffect(() => {
+      obtenerProducto()
+        .then( response => {
+            setItem( response )
+        })
+    }, [])
+  
+    const obtenerProducto = () => {
+      return new Promise( (resolve, reject) => {
+          setTimeout( () => {
+              resolve( PRODUCTOS )
+          }, 500)
+      })
+    }
+  
+
+
+    return (
+       <div className='grid grid-cols-3 gap-2 max-w-full m-10'>
+            {item.map((repuesto) => {
+                
+                    
+                    <ItemDetailContainer key={repuesto.id}  {...repuesto}/>
+                
+                   
+            })}
+            
+        </div> 
+    )  
+
 }
-
-export default ItemDetail
+    
+    export default ItemDetail

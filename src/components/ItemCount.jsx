@@ -1,12 +1,12 @@
 import React from 'react'
 import { useState } from 'react'
 
-const ItemCount = () => {
+const ItemCount = ({stock}) => {
     const [cantidad, setCantidad] = useState(1)
   
     function onAdd() {
         if (cantidad >= 7) return
-        setCantidad(cantidad + 1)
+        setCantidad(cantidad + stock)
     }
 
     return (
@@ -15,7 +15,7 @@ const ItemCount = () => {
             <button type='button'
                     onClick={() => {
                         if (cantidad <= 1) return
-                        setCantidad(cantidad - 1)
+                        setCantidad(cantidad - stock)
                     }}
             >
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM7 9a1 1 0 000 2h6a1 1 0 100-2H7z" clipRule="evenodd" /></svg>

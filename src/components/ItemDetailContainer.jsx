@@ -1,62 +1,46 @@
-import React, {useEffect, useState} from 'react'
-import ItemDetail from './ItemDetail'
-
-const PISTONES = [
-    { id: 1,
-      title: 'Kit piston CRF450R',
-      description:'Kit piston completo para  CRF450R 2008-2013',
-      price:'30000',
-      pictureUrl: '../../public/3.jpg'
-    },
-    { id: 2,
-      title: 'Kit Biela YZ250F',
-      description:'Kit biela completo para  YZ250F 2015-2017',
-      price:'38000', 
-      pictureUrl: '../../public/2.jpg'
-    },
-    { id: 3,
-      title: 'Cadena distribucion RMZ250',
-      description:'Cadena distribucion RMZ250 2018-2019',
-      price:'9000',
-      pictureUrl: '../../public/1.jpg'
-    },
-]
+import React, {useState,useEffect} from 'react'
+import { useParams } from 'react-router-dom'
+import ItemCount from './itemCount'
+import { PRODUCTOS } from '../data/PRODUCTOS'
 
 const ItemDetailContainer = () => {
 
-    const [item, setItem] = useState( [] )
-  
-    useEffect(() => {
-      obtenerProducto()
-        .then( response => {
-            console.log(response);
-            setItem( response )
-        })
-    }, [])
-  
-    const obtenerProducto = () => {
-      return new Promise( (resolve, reject) => {
-          setTimeout( () => {
-              resolve( PISTONES )
-          }, 2000)
-      })
-    }
-  
+  const [item, setItem] = useState({})
+  const { id } = useParams()
 
+  useEffect(() => {
+    getItemDetail().then( res => {
+        setItem( res )
+    })
+  }, [ id ])
+  
+  const getItemDetail = () => {
+    return new Promise( (resolve, reject) => {
+      const item = PRODUCTOS.find( p => p.id == id )
+      setTimeout(() => {
+          resolve( item )
+      }, 200);
+    })
+  }
 
-    return (
-       <div>
-            {item.map((repuesto) => {
-                return(
-                    
-                    <ItemDetail key={repuesto.id}  {...repuesto}/>
-                
-                )    
-            })}
-            
-        </div> 
-    )  
-
-}
+  return (
+    <>
+      <h1 className='text-4xl text-red-600 text-center'>DETALLE</h1>
     
-    export default ItemDetailContainer
+      <div className="card card-compact w-96 bg-base-100 shadow-xl">
+        <img className='' src={item.pictureUrl} alt="repuestos" />
+        <div className="card-body">
+            <h2 className="card-title">{item.title}</h2>
+            <p>Descripcion: {item.description}</p>
+            <p>Precio: {item.price}</p>
+            <p> Stock: {item.stock}</p>
+            <p>Categoria: {item.categoria}</p>
+            <ItemCount />
+        </div>
+      </div>
+    </>
+    
+  )
+}
+
+export default ItemDetailContainer
