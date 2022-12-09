@@ -1,28 +1,9 @@
-import React, {useEffect, useState} from 'react'
+import React from 'react'
 import Item from './Item'
-import { PRODUCTOS } from '../data/PRODUCTOS'
 
 
-const ItemList = () => {
 
-    const [productos, setProductos] = useState( [] )
-  
-    useEffect(() => {
-      obtenerProductos()
-        .then( response => {
-          setProductos( response )
-        })
-    }, [])
-  
-    const obtenerProductos = () => {
-      return new Promise( (resolve, reject) => {
-          setTimeout( () => {
-              resolve( PRODUCTOS )
-          }, 500)
-      })
-    }
-  
-
+const ItemList = ({productos}) => {
 
     return (
        

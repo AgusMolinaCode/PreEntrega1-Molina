@@ -13,9 +13,9 @@ const Navbar = () => {
            <Link to="/"><img className='w-[300px] mt-2' src={logo}/></Link> 
            <nav className='gap-3 flex justify-around'>
               <NavLink to={'/categoria/Motocross'} className='btn  bg-red-500'>MOTOCROSS</NavLink>
-              <NavLink className='btn  bg-red-500'>DEPORTIVOS</NavLink>
-              <NavLink className='btn  bg-red-500'>ATV-UTV</NavLink>
-              <NavLink className='btn  bg-red-500'>ACCESORIOS</NavLink>
+              <NavLink to={'/categoria/Pista'} className='btn  bg-red-500'>DEPORTIVOS</NavLink>
+              <NavLink to={'/categoria/ATV'} className='btn  bg-red-500'>ATV-UTV</NavLink>
+              <NavLink to={'/categoria/accesorio'} className='btn  bg-red-500'>ACCESORIOS</NavLink>
             </nav>
           </div>
           <div>
