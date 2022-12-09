@@ -6,14 +6,14 @@ const ItemCount = ({stock}) => {
     const [cantidad, setCantidad] = useState(1)
   
     function onAdd() {
-        if (cantidad >= 5) return
+        if (cantidad >= stock) return
         setCantidad(cantidad + 1)
     }
 
     return (
     <>    
         <div className='flex gap-4 mt-5 justify-center'>
-            <h1> stock:{stock}</h1>
+            
             <button type='button'
                     onClick={() => {
                         if (cantidad <= 1) return

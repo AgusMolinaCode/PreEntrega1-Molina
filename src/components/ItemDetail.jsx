@@ -1,7 +1,6 @@
 import React, {useEffect, useState} from 'react'
 import ItemDetailContainer from './ItemDetailContainer'
 import { PRODUCTOS } from '../data/PRODUCTOS'
-import ItemCount from './ItemCount'
 
 const ItemDetail = () => {
 
@@ -25,12 +24,11 @@ const ItemDetail = () => {
 
 
     return (
-       <div className='grid grid-cols-3 gap-2 max-w-full m-10'>
+       <div className='flex justify-center mt-10'>
             {item.map((repuesto) => {
                 
                 <div> 
                     <ItemDetailContainer key={repuesto.id}  {...repuesto}/>
-                    <ItemCount key={repuesto.id}  {...repuesto}/>
                 </div>     
             })}
             

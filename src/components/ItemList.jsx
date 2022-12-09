@@ -26,7 +26,7 @@ const ItemList = () => {
 
     return (
        
-    <div className='grid grid-cols-3 gap-2 max-w-full m-20'>
+    <div className='flex flex-wrap justify-center gap-2  m-10'>
         {productos.map((producto) => {
         return(
             <Item key={producto.id}  {...producto}/>
