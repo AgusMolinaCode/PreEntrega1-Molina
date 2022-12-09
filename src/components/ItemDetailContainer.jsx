@@ -34,7 +34,7 @@ const ItemDetailContainer = () => {
             <p>Descripcion: {item.description}</p>
             <p>Precio: {item.price}</p>
             <p> Stock: {item.stock}</p>
-            <p>Categoria: {item.categoria}</p>
+            <p>Categoria: {item.categoriaId}</p>
             <ItemCount />
         </div>
       </div>

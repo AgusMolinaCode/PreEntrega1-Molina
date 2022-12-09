@@ -3,7 +3,7 @@ const PRODUCTOS = [
       title: 'Honda CRF250R ´22 SLIP-ON',
       description:'YOSHIMURA RS12 SLIP ON',
       price:'30000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/1.jpeg',
       categoriaId: 'Motocross'
     },
@@ -11,7 +11,7 @@ const PRODUCTOS = [
       title: 'Honda CRF250R ´22 FULL',
       description:'YOSHIMURA RS12 FULL SYSTEM',
       price:'30000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/2.jpeg',
       categoriaId: 'Motocross'
     },
@@ -19,7 +19,7 @@ const PRODUCTOS = [
       title: 'Kawasaki KX250F ´21-´22 FULL',
       description:'YOSHIMURA RS12 SYSTEM',
       price:'30000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/3.jpg',
       categoriaId: 'Motocross'
     },
@@ -27,7 +27,7 @@ const PRODUCTOS = [
       title: 'Yamaha yz450F ´20-´22 FULL',
       description:'YOSHIMURA RS12 SYSTEM',
       price:'40000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/4.jpg',
       categoriaId: 'Motocross'
     },
@@ -35,7 +35,7 @@ const PRODUCTOS = [
       title: 'KTM-Husqvarna 500 EXC-F ´20-´22 FULL',
       description:'YOSHIMURA RS12 HDR/CANISTER/END CAP EXHAUST SYSTEM SS-AL-CF',
       price:'50000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/5.jpg',
       categoriaId: 'Motocross'
     },
@@ -43,7 +43,7 @@ const PRODUCTOS = [
       title: 'Yamaha YZ250F ´19-´22 FULL',
       description:'YOSHIMURA RS12 SYSTEM',
       price:'60000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/6.jpg',
       categoriaId: 'Motocross'
     },
@@ -51,7 +51,7 @@ const PRODUCTOS = [
       title: 'Suzuki GSX-R1300 Hayabusa ´22',
       description:'YOSHIMURA EXHAUST RACE AT2 3/4 SYS',
       price:'60000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/7.png',
       categoriaId: 'Pista'
     },
@@ -59,7 +59,7 @@ const PRODUCTOS = [
       title: 'Kawasaki ZX-10R ´21 FULL',
       description:'YOSHIMURA EXHAUST R-77 DUAL RACE',
       price:'60000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/8.png',
       categoriaId: 'Pista'
     },
@@ -67,7 +67,7 @@ const PRODUCTOS = [
       title: 'KTM ´22 890 Duke R',
       description:'YOSHIMURA EXHAUST STREET AT2',
       price:'60000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/9.jpg',
       categoriaId: 'Pista'
     },
@@ -75,7 +75,7 @@ const PRODUCTOS = [
       title: 'Yamaha YZF-R3 ´15-´21',
       description:'YOSHIMURA EXHAUST STREET AT2',
       price:'60000',
-      stock: '10',
+      stock: 10,
       pictureUrl: '../../public/10.jpg',
       categoriaId: 'Pista'
     },
@@ -83,7 +83,7 @@ const PRODUCTOS = [
       title: 'Kawasaki ZX636 Ninja ZX-6R',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '11',
+      stock: 11,
       pictureUrl: '../../public/11.jpg',
       categoriaId: 'Pista'
     },
@@ -91,7 +91,7 @@ const PRODUCTOS = [
       title: 'Yamaha YZF-R6',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '12',
+      stock: 12,
       pictureUrl: '../../public/12.jpeg',
       categoriaId: 'Pista'
     },
@@ -99,7 +99,7 @@ const PRODUCTOS = [
       title: 'Triumph Street Triple RS 765',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '13',
+      stock: 13,
       pictureUrl: '../../public/13.jpeg',
       categoriaId: 'Pista'
     },
@@ -107,7 +107,7 @@ const PRODUCTOS = [
       title: 'Suzuki Lt-R450 Quadracer',
       description:'YOSHIMURA SIGNATURE RS-5 SLIP-ON',
       price:'60000',
-      stock: '14',
+      stock: 14,
       pictureUrl: '../../public/14.jpg',
       categoriaId: 'ATV'
     },
@@ -115,7 +115,7 @@ const PRODUCTOS = [
       title: 'Honda TRX400 EX',
       description:'YOSHIMURA SIGNATURE RS-2 SLIP-ON',
       price:'60000',
-      stock: '15',
+      stock: 15,
       pictureUrl: '../../public/15.jpg',
       categoriaId: 'ATV'
     },
@@ -123,7 +123,7 @@ const PRODUCTOS = [
       title: 'Honda TRX450ER Electric Start -TRX450R',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '16',
+      stock: 16,
       pictureUrl: '../../public/16.jpg',
       categoriaId: 'ATV'
     },
@@ -131,7 +131,7 @@ const PRODUCTOS = [
       title: 'Polaris RZR 170',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '17',
+      stock: 17,
       pictureUrl: '../../public/17.jpg',
       categoriaId: 'ATV'
     },
@@ -139,7 +139,7 @@ const PRODUCTOS = [
       title: 'Yamaha YZ250FX',
       description:'YOSHIMURA RS-4 HEADER/CANISTER/END CAP ',
       price:'60000',
-      stock: '18',
+      stock: 18,
       pictureUrl: '../../public/18.jpg',
       categoriaId: 'Motocross'
     },
@@ -147,7 +147,7 @@ const PRODUCTOS = [
       title: 'KTM 450 SX-F',
       description:'YOSHIMURA AT2 STREET SO',
       price:'60000',
-      stock: '19',
+      stock: 19,
       pictureUrl: '../../public/19.jpg',
       categoriaId: 'Motocross'
     },
@@ -155,7 +155,7 @@ const PRODUCTOS = [
       title: 'YOSHIMURA RS-12 SPARK ARRESTOR',
       description:'YOSHIMURA RS-12 SPARK ARRESTOR',
       price:'60000',
-      stock: '20',
+      stock: 20,
       pictureUrl: '../../public/20.jpg',
       categoriaId: 'accesorio'
     },
@@ -163,7 +163,7 @@ const PRODUCTOS = [
       title: 'Reemplazo Lana 4T',
       description:'YOSHIMURA RS-12 EXHAUST REPACK KIT',
       price:'60000',
-      stock: '21',
+      stock: 21,
       pictureUrl: '../../public/21.jpg',
       categoriaId: 'accesorio'
     },
@@ -171,7 +171,7 @@ const PRODUCTOS = [
       title: 'Inserto "Monkey"',
       description:'YOSHIMURA SOUND INSERT RS-3 MONKEY',
       price:'60000',
-      stock: '22',
+      stock: 22,
       pictureUrl: '../../public/22.jpg',
       categoriaId: 'accesorio'
     },

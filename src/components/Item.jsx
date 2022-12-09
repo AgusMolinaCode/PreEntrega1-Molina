@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom'
 const Item = ( {  id,title, pictureUrl } ) => {
     return (
     
-        <div className=" mt-4 bg-base-100 shadow-xl w-[550px] h-[550px]">
-            <figure className="px-10 pt-10 w-[550px] h-[400px]">
-            <img src={pictureUrl} alt="foto repuestos" className="rounded-xl" />
+        <div className=" mt-4 bg-base-100 shadow-xl">
+            <figure className="px-10 pt-10">
+            <img src={pictureUrl} alt="foto repuestos" className="rounded-xl h-[215px]" />
             </figure>
             <div className="card-body items-center text-center">
                 <h2 className="card-title">{title}</h2>
