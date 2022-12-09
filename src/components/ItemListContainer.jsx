@@ -3,6 +3,8 @@ import { useParams } from 'react-router-dom'
 import { PRODUCTOS } from '../data/PRODUCTOS'
 import ItemList from './ItemList'
 
+
+
 const ItemListContainer = () => {
 
   const [productos, setProductos] = useState( [] )
@@ -30,8 +32,10 @@ const ItemListContainer = () => {
   
   return (
     <div>
-    
-      <h1 className='text-4xl text-red-600 text-center'>PRODUCTOS</h1>
+      <div>
+        <img className=' m-auto w-[1000px] h-[300px]' src="../../public/I.jpg" alt="" />
+      </div>
+      <h1 className='text-4xl text-black text-center font-bold'>PRODUCTOS</h1>
       <ItemList productos={productos}  />
 
     </div>
